@@ -9,7 +9,7 @@ const currentTempEl = document.getElementById('current-temp');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const API_Key = 'e05bf99b4ea4f2b50aa6227820271560';
+const API_Key = '81045800edce049847d235419e0979bd';
 
 setInterval(() => {
     const time = new Date();
@@ -132,6 +132,15 @@ function search() {
 
     // Clear the search input
     searchInput.value = '';
+
+    // In case of Error
+    then(data => {
+      console.log(data);
+      showWeatherData(data);
+  })
+  .catch(error => {
+      console.error('Error fetching weather data:', error);
+  });
   }
 }
 
