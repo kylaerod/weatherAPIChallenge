@@ -10,28 +10,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.search-container {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  #searchHistory {
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
 
-.container{
-    padding: 20px 70px;
-    color: #362ab8;
-    position: fixed;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+
+
 
 .current-info{
     display: flex;
@@ -77,7 +58,6 @@ text-align:centre;
     display: flex;
     flex-direction: column;
     background: rgba(24,24,27,0.6);
-    padding 20px;
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
